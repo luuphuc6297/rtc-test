@@ -1,0 +1,49 @@
+{
+    "id": "6081a74c-ec53-42d9-b95c-3827e0a46702",
+    "attributes": {
+        "iss": "https://sso-api.coachingworkspace.com",
+        "sub": "dev@coachingworkspace.io",
+        "type": "auth",
+        "status": "active",
+        "email": "dev@coachingworkspace.io",
+        "firstName": "Dev",
+        "lastName": "CW",
+        "phone": "+",
+        "avatarUrl": "http://res.cloudinary.com/coaching-workspace/image/upload/c_fill,g_face,h_100,w_100/v1664351183/sso/jnjmylncnbojrbil9sim.jpg",
+        "avatarPath": null,
+        "setPassword": true,
+        "bio": null,
+        "timezone": {
+            "label": "(GMT+7:00) Bangkok, Hanoi, Jakarta",
+            "value": "Asia/Bangkok",
+            "abbrev": "ICT",
+            "offset": 7,
+            "altName": "Indochina Time"
+        },
+        "workspaces": [
+            {
+                "id": "38647fbd-20a8-40ab-8292-b4828d636d29",
+                "created_at": "2022-06-07T07:41:32.317Z",
+                "updated_at": "2022-06-29T07:30:25.413Z",
+                "name": "dev",
+                "owner_id": "4b3f4d83-112a-4b71-8a73-578def8a1cb7",
+                "subdomain": "dev",
+                "domain": null,
+                "droplet_name": null,
+                "description": null,
+                "accent_color": null,
+                "logo_url": null,
+                "banner_url": null,
+                "product_id": null,
+                "start_date": null,
+                "end_date": null
+            }
+        ],
+        "iat": 1668509002,
+        "exp": 1671101002
+    },
+    "meta": {
+        "createdAt": "2022-09-28T07:04:57.509Z",
+        "updatedAt": "2022-09-28T07:47:01.000Z"
+    }
+}

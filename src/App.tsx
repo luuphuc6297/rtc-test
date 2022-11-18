@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box } from '@mui/material';
+import { Inspector } from 'components/new/Inspector';
+import { RtcContentHeader } from 'components/new/RtcContentHeader';
+import { MainLayout } from 'components/old/Main';
+import { RtcLeftSidebar } from 'components/old/RtcLeftSidebar';
+
+import { SimpleCollapse } from 'components/new/SimpleCollapse';
+import { Chatting } from 'components/old/Chatting';
+import { conversation } from 'mocks/conversationId';
+import me from 'mocks/me.json';
+import { workspace } from 'mocks/workspace';
+import { messages } from 'mocks/messages';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <MainLayout drawer={<RtcLeftSidebar />}>
+            <Box sx={{ width: '100%' }}>
+                <RtcContentHeader />
+                {/*@ts-ignore */}
+                <Chatting workspace={workspace} conversation={conversation} currentUser={me} messages={messages} />
+                <SimpleCollapse>
+                    <Inspector />
+                </SimpleCollapse>
+            </Box>
+        </MainLayout>
+    );
 }
 
 export default App;
